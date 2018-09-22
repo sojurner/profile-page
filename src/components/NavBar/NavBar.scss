@@ -1,0 +1,24 @@
+.nav-bar {
+  display: flex;
+  flex-direction: horizontal;
+  height: 2rem;
+}
+
+.nav-link {
+  margin: 0.5rem;
+  text-decoration: none;
+  height: 1rem;
+  border: 1px solid black;
+  background: rgb(177, 174, 174);
+  padding: 0.5rem;
+  color: white;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+.nav-link:hover {
+  background-color: black;
+}
+
+.active:hover {
+  // background-color: gray;
+}
