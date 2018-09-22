@@ -1,32 +1,52 @@
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+  padding: 7px 6px 0 10px;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.fa-bars:hover {
+  animation: pulse 1s linear infinite;
 }
 
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(157, 158, 158, 0.367);
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    box-shadow: 0 0 0 7px rgba(157, 158, 158, 0.134);
   }
+  100% {
+    box-shadow: 0 0 0 0 rgba(157, 158, 158, 0);
+  }
+}
+
+.fa-window-close {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+.fa-window-close:hover {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 0.7rem;
+  height: 2rem;
+  width: 2rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: horizontal;
+  justify-content: space-between;
 }
