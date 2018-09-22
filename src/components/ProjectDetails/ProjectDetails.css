@@ -1,0 +1,18 @@
+.img-Minecraft,
+.img-Amumu,
+.img-Avatar {
+  filter: grayscale(50%); }
+
+.img-Minecraft:hover {
+  filter: grayscale(0%); }
+
+.img-Amumu:hover {
+  filter: grayscale(0%); }
+
+.img-Avatar:hover {
+  filter: grayscale(0%); }
+
+.fa-github,
+.fa-calendar {
+  font-size: 2rem;
+  cursor: pointer; }
