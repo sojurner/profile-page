@@ -16,7 +16,7 @@ class App extends Component {
     console.log(this.state);
   }
 
-  handleHover = str => {
+  handleClick = str => {
     str === 'show'
       ? this.setState({ hamburgerButton: false })
       : this.setState({ hamburgerButton: true });
@@ -28,15 +28,12 @@ class App extends Component {
       <div className="App">
         <header className="header">
           {hamburgerButton && (
-            <i class="fas fa-bars" onClick={() => this.handleHover('show')} />
+            <i class="fas fa-bars" onClick={() => this.handleClick('show')} />
           )}
           {!hamburgerButton && (
-            <i
-              class="far fa-window-close"
-              onClick={() => this.handleHover('hide')}
-            />
+            <i class="fas fa-times" onClick={() => this.handleClick('hide')} />
           )}
-          {!hamburgerButton && <NavBar handleHover={this.handleHover} />}
+          {!hamburgerButton && <NavBar handleClick={this.handleClick} />}
         </header>
         <main>
           <h1>Paul Kim</h1>

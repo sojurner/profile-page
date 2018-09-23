@@ -1,0 +1,52 @@
+.fa-github-alt,
+.fa-linkedin,
+.fa-envelope {
+  text-align: center;
+  font-size: 2rem;
+  color: #796565;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: auto 1rem;
+  background: #c9b8b8;
+  padding: 7px 7px 8px 12px; }
+
+.fa-envelope:hover {
+  animation: pulse 1s linear infinite;
+  background: #8b7f7f;
+  color: #c9b8b8; }
+
+.fa-github-alt:hover {
+  animation: pulse 1s linear infinite;
+  background: #8b7f7f;
+  color: #c9b8b8; }
+
+.fa-linkedin:hover {
+  background: #8b7f7f;
+  color: #c9b8b8;
+  animation: pulse 1s linear infinite; }
+
+.contact-info {
+  animation: flipInX 1.2s cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0; }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in; }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1; }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg); }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px); } }

@@ -10,6 +10,30 @@
 //   position: absolute;
 // }
 
+.project-card {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+
+  margin: 2rem 0 0 7rem;
+}
+
+.project-card:hover {
+  background: linear-gradient(
+    rgba(19, 161, 161, 0.808),
+    rgba(175, 223, 224, 0.87)
+  );
+  box-shadow: 0px 1px 2px 2px rgb(129, 193, 218);
+}
+
+.img {
+  border-radius: 0.5rem;
+  filter: grayscale(50%);
+}
+
+.img:hover {
+  filter: grayscale(0%);
+}
+
 .img-Minecraft,
 .img-Amumu,
 .img-Avatar {
@@ -28,8 +52,75 @@
   filter: grayscale(0%);
 }
 
-.fa-github,
-.fa-calendar {
-  font-size: 2rem;
+// .img {
+//   position: absolute;
+// }
+
+.fa-github {
+  font-size: 3rem;
   cursor: pointer;
+  border-radius: 50%;
+  padding: 2px 0 2px 5px;
+  color: rgb(78, 76, 76);
+  margin: 0 3rem;
+}
+
+.fa-desktop {
+  font-size: 3rem;
+  border-radius: 50%;
+  padding: 7px 0 5px 5px;
+  margin: 0 3rem;
+}
+
+.fa-github:hover {
+  color: rgb(112, 104, 104);
+  animation: pulse 1s linear infinite;
+}
+
+.fa-desktop:hover {
+  color: rgb(112, 104, 104);
+  animation: pulse 1s linear infinite;
+}
+
+// .description {
+//   position: absolute;
+//   width: 5rem;
+//   background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87));
+//   width: 100%;
+//   height: 100%;
+//   z-index: 1;
+// }
+
+.fa-window-close {
+  font-size: 2.5rem;
+  text-align: start;
+  margin: 0.3rem 0 0 0.6rem;
+}
+
+.fa-window-close:hover {
+  color: rgb(128, 99, 105);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 13%;
+  top: 8%;
+  height: 85vh;
+  width: 76vw;
+  background: rgb(174, 195, 212);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+modal::backdrop {
+  color: rgb(0, 0, 0);
+}
+
+.modal-gif {
+  width: 40rem;
+  margin: 1rem auto;
+  height: 22rem;
+  animation: fadeIn 2s linear;
 }

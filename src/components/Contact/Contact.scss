@@ -1,0 +1,67 @@
+.fa-github-alt,
+.fa-linkedin,
+.fa-envelope {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(121, 101, 101);
+  cursor: pointer;
+  border-radius: 50%;
+  margin: auto 1rem;
+  background: rgb(201, 184, 184);
+  padding: 7px 7px 8px 12px;
+}
+
+.fa-envelope:hover {
+  animation: pulse 1s linear infinite;
+  background: rgb(139, 127, 127);
+  color: rgb(201, 184, 184);
+}
+
+.fa-github-alt:hover {
+  animation: pulse 1s linear infinite;
+  background: rgb(139, 127, 127);
+  color: rgb(201, 184, 184);
+}
+
+.fa-linkedin:hover {
+  background: rgb(139, 127, 127);
+  color: rgb(201, 184, 184);
+  animation: pulse 1s linear infinite;
+}
+
+.contact-info {
+  animation: flipInX 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}

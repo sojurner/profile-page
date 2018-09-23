@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ProjectDetails } from '../ProjectDetails/ProjectDetails';
+import ProjectDetails from '../ProjectDetails/ProjectDetails';
 
 import './Projects.css';
 
@@ -51,7 +51,6 @@ class Projects extends Component {
           onClick={event => this.handleMouseEvent(event, `show${projectType}`)}
         >
           <h3>{projectType}</h3>
-          <p>lorem ipsum</p>
           {this.state.display &&
             this.state.type === projectType && (
               <div className={`project-container ${projectType}`}>
