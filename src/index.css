@@ -23,6 +23,16 @@ body {
   src: url(./Fonts/Alcubierre.otf);
 }
 
+@font-face {
+  font-family: trench;
+  src: url(./Fonts/Trench.otf);
+}
+
+@font-face {
+  font-family: codec;
+  src: url(./Fonts/codec.ttf);
+}
+
 * {
   font-weight: 800;
   font-family: alcub;
