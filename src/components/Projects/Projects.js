@@ -12,10 +12,6 @@ class Projects extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state.display);
-  }
-
   handleMouseEvent = (event, str) => {
     event.preventDefault();
     if (str.includes('show')) {
