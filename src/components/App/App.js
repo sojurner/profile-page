@@ -12,10 +12,6 @@ class App extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state);
-  }
-
   handleClick = str => {
     str === 'show'
       ? this.setState({ hamburgerButton: false })
@@ -36,7 +32,7 @@ class App extends Component {
           {!hamburgerButton && <NavBar handleClick={this.handleClick} />}
         </header>
         <main>
-          <h1>Paul Kim</h1>
+          <h1 className="me">Paul Kim</h1>
           <ContentRoutes />
         </main>
       </div>
