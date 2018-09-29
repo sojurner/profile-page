@@ -12,13 +12,8 @@ class About extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state.dataObj);
-  }
-
   handleHover = (event, str, title) => {
     event.preventDefault();
-    console.log(event);
     if (str === 'show') {
       this.setState({ showImage: title });
     } else {
@@ -70,7 +65,7 @@ class About extends Component {
       if (period.extra) {
         subTimeline = period.extra.map(unit => {
           return (
-            <li>
+            <section className="past-details">
               <span />
               <p className="sub-title">{unit.title}</p>
               <p className="sub-location">{unit.location}</p>
@@ -80,7 +75,7 @@ class About extends Component {
                 <span>{unit.startYear}</span>
                 <span>{unit.endYear}</span>
               </div>
-            </li>
+            </section>
           );
         });
       }
@@ -93,7 +88,7 @@ class About extends Component {
       <section className="about-container">
         <ul>{this.displayTimeline()}</ul>
         {this.state.showTimeLine && (
-          <ul className="sub">{this.displaySubTimeline()}</ul>
+          <div className="sub">{this.displaySubTimeline()}</div>
         )}
       </section>
     );
