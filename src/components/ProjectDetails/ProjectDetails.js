@@ -11,10 +11,6 @@ class ProjectDetails extends Component {
     };
   }
 
-  componentDidUpdate() {
-    console.log(this.state.showScreen);
-  }
-
   handleHover = (event, title) => {
     event.preventDefault();
     if (title) {
