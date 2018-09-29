@@ -35,7 +35,6 @@
   margin: 5rem 60px;
   position: relative;
   background: #7a929b;
-  opacity: 0.8;
   border-radius: 0.5rem;
   color: #494545;
   width: 15rem;
@@ -90,16 +89,9 @@
   color: azure;
   width: 21rem; }
 
-.about-container ul li ul li > span:before,
-.about-container ul li ul li > span:after {
-  content: '';
-  width: 15px;
-  height: 15px;
-  border: 2px solid #aaa;
-  position: absolute;
-  border-radius: 50%;
-  left: -9.4px;
-  background: white; }
+.past-details {
+  background: #5a8197;
+  border: 2px solid red; }
 
 .about-container ul li ul li .sub-time span:first-child {
   top: -16px; }
@@ -124,7 +116,7 @@
 
 .image-College {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
   right: 1.5rem;
   width: 13rem;
   height: 6rem;
@@ -135,8 +127,8 @@
   position: absolute;
   bottom: 0.5rem;
   right: 2.7rem;
-  width: 10rem;
-  height: 7rem;
+  width: 9rem;
+  height: 6rem;
   animation: fadeIn 0.5s linear;
   z-index: 1; }
 
@@ -144,8 +136,8 @@
   position: absolute;
   bottom: 1.5rem;
   right: 1.5rem;
-  width: 14rem;
-  height: 5rem;
+  width: 13rem;
+  height: 4rem;
   animation: fadeIn 0.5s linear;
   z-index: 1; }
 
