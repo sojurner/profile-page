@@ -1,11 +1,16 @@
 .project-type {
-  border: 2px solid gray;
   width: 15rem;
-  background-color: #dad3c9;
+  background-color: #a2b6c9;
   animation: bazinga 1s ease-in;
   margin: 5rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  font-family: trench;
+  font-size: 2rem;
 }
 
 .project-container {
@@ -15,7 +20,6 @@
   position: absolute;
   top: 19%;
   left: 38%;
-
   width: 70%;
   margin: -5% 0 0 -13%;
 }
@@ -35,9 +39,8 @@
 }
 
 .active {
-  background-color: rgb(121, 103, 103);
+  background-color: rgb(109, 134, 136);
   color: white;
-  border: 2px solid rgb(63, 61, 61);
 }
 
 @keyframes bazinga {
