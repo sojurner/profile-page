@@ -1,6 +1,7 @@
 .project-card {
   padding: 0.5rem;
   border-radius: 0.5rem;
+  animation: fadeIn 1s linear;
   margin: 2rem 0 0 7rem; }
 
 .project-card:hover {
@@ -33,14 +34,15 @@
   cursor: pointer;
   border-radius: 50%;
   padding: 2px 0 2px 5px;
-  color: #4e4c4c;
+  color: #5d5f6e;
   margin: 0 3rem; }
 
 .fa-desktop {
-  font-size: 3rem;
+  font-size: 2.7rem;
   border-radius: 50%;
   padding: 7px 0 5px 5px;
-  margin: 0 3rem; }
+  margin: 0 3rem;
+  color: #5d5f6e; }
 
 .fa-github:hover {
   color: #706868;
@@ -75,6 +77,11 @@ modal::backdrop {
 
 .modal-gif {
   width: 40rem;
-  margin: 1rem auto;
-  height: 22rem;
-  animation: fadeIn 2s linear; }
+  margin: 1rem auto 3rem auto;
+  height: 21rem;
+  animation: fadeIn 2s linear;
+  border-radius: 0.5rem; }
+
+.description {
+  font-family: codec;
+  margin: 3rem 0; }
