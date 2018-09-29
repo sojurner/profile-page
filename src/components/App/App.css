@@ -16,6 +16,11 @@
   width: 2.5rem;
   color: #21a4bc; }
 
+.me {
+  font-size: 4rem;
+  margin: 4rem auto 4rem auto;
+  color: #b2caca; }
+
 .fa-bars:hover {
   background: #105d75;
   animation: pulse 1s linear infinite; }
