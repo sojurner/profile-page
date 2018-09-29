@@ -3,7 +3,7 @@ export const allProjects = [
     title: 'Minecraft',
     projectType: 'Static Compositions',
     description:
-      'Minecraft-inspired static webpage with emphasis on responsive design',
+      'Minecraft-inspired static webpage with emphasis on CSS grid and responsive design',
     githubURL: 'https://github.com/sojurner/Static-Composition-1',
     githubPages: 'https://sojurner.github.io/Static-Composition-1/',
     backgroundImg: '../../Images/MineCraft SS.png'
@@ -11,7 +11,7 @@ export const allProjects = [
   {
     title: 'Avatar',
     description:
-      'Avatar-inspired static webpage with emphasis on responsiveness and card display',
+      'Avatar-inspired static webpage with emphasis on CSS grid/flex, responsiveness, and card display',
     projectType: 'Static Compositions',
     githubURL: 'https://github.com/sojurner/Static-Composition-2',
     githubPages: 'https://sojurner.github.io/Static-Composition-2/',
@@ -29,7 +29,8 @@ export const allProjects = [
   {
     title: 'Movie-tracker',
     projectType: 'React/Redux',
-    description: 'Track most recent movies and view their trailers',
+    description:
+      'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
     githubURL: 'https://github.com/sojurner/Movie-Tracker',
     githubPages: 'asdf',
     backgroundImg: 'asdfs'
@@ -56,7 +57,7 @@ export const allProjects = [
     title: 'Headcount',
     projectType: 'React',
     description:
-      'Checkout out your fitness Activity from Strava and track your Pomodoros',
+      'Compare student grade averages between two districts in Colorado.',
     githubURL: 'https://github.com/sojurner/headcount2.0',
     githubPages: 'asdf',
     backgroundImg: 'asdfs'
@@ -64,7 +65,8 @@ export const allProjects = [
   {
     title: 'Tron',
     projectType: 'Vanilla JS',
-    description: 'Recreation of Tron game using Object-Oriented Programming',
+    description:
+      'Recreation of Tron game with HTML Canvas and focus on Object-Oriented Programming',
     githubURL: 'https://github.com/sojurner/game-time-1',
     githubPages: 'https://michaelyons.github.io/game-time/',
     backgroundImg: 'asdfs',
@@ -82,7 +84,8 @@ export const allProjects = [
   {
     title: 'Linked-list',
     projectType: 'Vanilla JS',
-    description: 'Bookmark websites',
+    description:
+      'Bookmark your favorite sites, check them off after reading them, and delete',
     githubURL: 'https://github.com/sojurner/linked-list',
     githubPages: 'https://sojurner.github.io/linked-list/',
     backgroundImg: 'asdfs'
@@ -90,7 +93,8 @@ export const allProjects = [
   {
     title: '2Do-box',
     projectType: 'Vanilla JS',
-    description: 'Save your to-dos and Rate them',
+    description:
+      'Save your to-dos and Rate them by importance.  also Search for specific to-dos and delete when completed',
     githubURL: 'https://github.com/sojurner/2DoBox-Pivot',
     githubPages: 'https://sojurner.github.io/2DoBox-Pivot/',
     backgroundImg: 'asdfs'
