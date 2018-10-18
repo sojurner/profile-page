@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
 import * as projects from '../../Data/ProjectData';
+import Modal from 'react-responsive-modal';
 
 import { ProjectModal } from '../ProjectModal/ProjectModal';
 
 import './ProjectDetails.css';
+import { totalmem } from 'os';
 class ProjectDetails extends Component {
   constructor() {
     super();
     this.state = {
       showDescription: '',
-      showScreen: '',
+      showModal: '',
       open: false
     };
   }
 
   handleHover = (event, title) => {
+    const { redirectLink } = this.props;
+    event.stopPropagation();
     event.preventDefault();
+    console.log(title);
     if (title) {
       this.setState({ showDescription: title });
     } else {
@@ -23,8 +28,9 @@ class ProjectDetails extends Component {
     }
   };
 
-  handleClick = (event, str, title) => {
+  handleClick = (event, title) => {
     event.stopPropagation();
+    this.setState({ showModal: title });
     this.onOpenModal();
   };
 
@@ -33,7 +39,6 @@ class ProjectDetails extends Component {
   };
 
   onCloseModal = () => {
-    console.log('clicked');
     this.setState({ open: false });
   };
 
@@ -49,7 +54,7 @@ class ProjectDetails extends Component {
           onMouseEnter={event => this.handleHover(event, comp.title)}
           onMouseLeave={event => this.handleHover(event)}
           className={`project-card ${comp.title}`}
-          onClick={event => this.handleClick(event, 'show', comp.title)}
+          onClick={event => this.handleClick(event, comp.title)}
         >
           <img
             className={`img img-${comp.title}`}
@@ -57,10 +62,18 @@ class ProjectDetails extends Component {
             height="200"
             width="300"
           />
-          {/* {this.state.showDescription === comp.title && <h3>{comp.title}</h3>}
-          {this.state.showScreen === comp.title &&
-            this.state.showScreen !== '' && ( */}
-          <ProjectModal onCloseModal={this.onCloseModal} />
+          {this.state.showDescription === comp.title && (
+            <h3>{this.state.showDescription}</h3>
+          )}
+          {this.state.showModal === comp.title && (
+            <Modal open={this.state.open} onClose={this.onCloseModal} center>
+              <ProjectModal
+                comp={comp}
+                onCloseModal={this.onCloseModal}
+                redirectLink={redirectLink}
+              />
+            </Modal>
+          )}
         </div>
       );
     });

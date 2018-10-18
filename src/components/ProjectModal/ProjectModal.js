@@ -1,9 +1,10 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
 
-export const ProjectModal = ({ onCloseModal }) => {
+export const ProjectModal = ({ onCloseModal, comp, redirectLink, open }) => {
+  console.log(comp.title);
   return (
-    <Modal open={this.state.open} onClose={onCloseModal} center>
+    <div>
       <iframe
         className="modal-gif"
         src={require(`../../Images/${comp.title}.gif`)}
@@ -20,6 +21,6 @@ export const ProjectModal = ({ onCloseModal }) => {
           onClick={event => redirectLink(event, comp.githubPages)}
         />
       </div>
-    </Modal>
+    </div>
   );
 };

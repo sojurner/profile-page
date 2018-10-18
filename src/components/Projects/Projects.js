@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectDetails from '../ProjectDetails/ProjectDetails';
+import Modal from 'react-responsive-modal';
 
 import './Projects.css';
 
