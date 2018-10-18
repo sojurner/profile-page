@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import * as projects from '../../Data/ProjectData';
+
+import { ProjectModal } from '../ProjectModal/ProjectModal';
+
 import './ProjectDetails.css';
-import { Dialog } from 'kodhus-ui-react';
 class ProjectDetails extends Component {
   constructor() {
     super();
     this.state = {
       showDescription: '',
-      showScreen: ''
+      showScreen: '',
+      open: false
     };
   }
 
@@ -22,11 +25,16 @@ class ProjectDetails extends Component {
 
   handleClick = (event, str, title) => {
     event.stopPropagation();
-    if (str === 'show') {
-      this.setState({ showScreen: title });
-    } else {
-      this.setState({ showScreen: '' });
-    }
+    this.onOpenModal();
+  };
+
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+
+  onCloseModal = () => {
+    console.log('clicked');
+    this.setState({ open: false });
   };
 
   render() {
@@ -49,32 +57,10 @@ class ProjectDetails extends Component {
             height="200"
             width="300"
           />
-          {this.state.showDescription === comp.title && <h3>{comp.title}</h3>}
+          {/* {this.state.showDescription === comp.title && <h3>{comp.title}</h3>}
           {this.state.showScreen === comp.title &&
-            this.state.showScreen !== '' && (
-              <div className="modal">
-                <i
-                  class="far fa-window-close"
-                  onClick={event => this.handleClick(event, 'close', '')}
-                />
-                <iframe
-                  className="modal-gif"
-                  src={require(`../../Images/${comp.title}.gif`)}
-                />
-                <h3>{comp.title}</h3>
-                <p className="description">{comp.description}</p>
-                <div>
-                  <i
-                    class="fab fa-github"
-                    onClick={event => redirectLink(event, comp.githubURL)}
-                  />
-                  <i
-                    class="fas fa-desktop"
-                    onClick={event => redirectLink(event, comp.githubPages)}
-                  />
-                </div>
-              </div>
-            )}
+            this.state.showScreen !== '' && ( */}
+          <ProjectModal onCloseModal={this.onCloseModal} />
         </div>
       );
     });
