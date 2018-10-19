@@ -1,37 +1,39 @@
-// .Minecraft:hover {
-//   height: 10rem;
-//   background: linear-gradient(rgba(75, 75, 75, 0.808), rgba(36, 36, 36, 0.87)),
-//     center / cover;
-// }
-
-// .Minecraft,
-// .Avatar,
-// .Amumu {
-//   position: absolute;
-// }
-
 .project-card {
   padding: 0.5rem;
   border-radius: 0.5rem;
   animation: fadeIn 1s linear;
   margin: 2rem 0 0 7rem;
+  height: 15rem;
+  width: 20rem;
 }
 
 .project-card:hover {
-  background: linear-gradient(
-    rgba(19, 161, 161, 0.808),
-    rgba(175, 223, 224, 0.87)
-  );
-  box-shadow: 0px 1px 2px 2px rgb(129, 193, 218);
+  /* background: linear-gradient(rgba(3, 89, 89, 0.808), rgba(5, 136, 138, 0.87)); } */
 }
 
 .img {
   border-radius: 0.5rem;
-  filter: grayscale(50%);
+}
+
+.img {
+  // filter: grayscale(70%);
+}
+
+.project-photos:hover {
+  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)),
+    center/cover;
+  background-size: 10rem;
+}
+
+.click-directions {
+  // position: absolute;
+  // bottom: 24rem;
+  // left: 10rem;
+  color: aliceblue;
 }
 
 .img:hover {
-  filter: grayscale(0%);
+  filter: brightness(50%);
 }
 
 .img-Minecraft,
@@ -52,16 +54,12 @@
   filter: grayscale(0%);
 }
 
-// .img {
-//   position: absolute;
-// }
-
 .fa-github {
   font-size: 3rem;
   cursor: pointer;
   border-radius: 50%;
   padding: 2px 0 2px 5px;
-  color: rgb(93, 95, 110);
+  color: #5d5f6e;
   margin: 0 3rem;
 }
 
@@ -70,27 +68,18 @@
   border-radius: 50%;
   padding: 7px 0 5px 5px;
   margin: 0 3rem;
-  color: rgb(93, 95, 110);
+  color: #5d5f6e;
 }
 
 .fa-github:hover {
-  color: rgb(112, 104, 104);
+  color: #706868;
   animation: pulse 1s linear infinite;
 }
 
 .fa-desktop:hover {
-  color: rgb(112, 104, 104);
+  color: #706868;
   animation: pulse 1s linear infinite;
 }
-
-// .description {
-//   position: absolute;
-//   width: 5rem;
-//   background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87));
-//   width: 100%;
-//   height: 100%;
-//   z-index: 1;
-// }
 
 .fa-window-close {
   font-size: 2.5rem;
@@ -99,7 +88,7 @@
 }
 
 .fa-window-close:hover {
-  color: rgb(128, 99, 105);
+  color: #806369;
 }
 
 .modal {
@@ -110,21 +99,13 @@
   top: 8%;
   height: 85vh;
   width: 76vw;
-  background: rgb(174, 195, 212);
+  background: #aec3d4;
   z-index: 1;
   border-radius: 0.5rem;
 }
 
 modal::backdrop {
-  color: rgb(0, 0, 0);
-}
-
-.modal-gif {
-  width: 40rem;
-  margin: 1rem auto 3rem auto;
-  height: 21rem;
-  animation: fadeIn 2s linear;
-  border-radius: 0.5rem;
+  color: black;
 }
 
 .description {

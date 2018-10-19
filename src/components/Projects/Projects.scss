@@ -1,15 +1,21 @@
 .project-type {
-  width: 15rem;
-  background-color: #a2b6c9;
+  width: 18rem;
+  background-color: #839eb8;
   animation: bazinga 1s ease-in;
   margin: 5rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
   padding: 0.5rem 0;
+  color: #4d6d6f;
+  height: 4rem;
+}
+
+.project-type:hover {
+  // border: 2px solid rgb(100, 120, 157);
+  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(100, 120, 157);
 }
 
 h3 {
-  font-family: trench;
   font-size: 2rem;
 }
 
@@ -18,11 +24,10 @@ h3 {
   flex-direction: horizontal;
   flex-wrap: wrap;
   position: absolute;
-  top: 19%;
+  top: 24%;
   left: 38%;
-  width: 70%;
-  margin: -5% 0 0 -13%;
-  max-width: 63rem;
+  margin: -5rem 0 0 -12rem;
+  max-width: 70rem;
 }
 
 .Vanilla:after {
@@ -30,18 +35,18 @@ h3 {
   position: absolute;
   width: 10%;
   height: 10%;
-  // background-color: red;
   right: 0;
   top: 50%;
   border: 20px solid transparent;
-  // border-right: 0;
-  // margin-top: -10px;
-  // margin-right: -20px;
 }
 
 .active {
-  background-color: rgb(109, 134, 136);
-  color: white;
+  background-color: #6d8688;
+  color: #c4c4c4;
+}
+
+.active:hover {
+  color: beige;
 }
 
 @keyframes bazinga {

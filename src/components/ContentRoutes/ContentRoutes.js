@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Projects from '../Projects/Projects';
-import { Contact } from '../Contact/Contact';
+import Contact from '../Contact/Contact';
 import About from '../../components/About/About';
 
 export const ContentRoutes = () => {

@@ -1,14 +1,18 @@
 .project-type {
-  width: 15rem;
-  background-color: #a2b6c9;
+  width: 18rem;
+  background-color: #839eb8;
   animation: bazinga 1s ease-in;
   margin: 5rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  color: #4d6d6f;
+  height: 4rem; }
+
+.project-type:hover {
+  box-shadow: 1.5px 1.5px 1.5px 1.5px #64789d; }
 
 h3 {
-  font-family: trench;
   font-size: 2rem; }
 
 .project-container {
@@ -16,11 +20,10 @@ h3 {
   flex-direction: horizontal;
   flex-wrap: wrap;
   position: absolute;
-  top: 19%;
+  top: 24%;
   left: 38%;
-  width: 70%;
-  margin: -5% 0 0 -13%;
-  max-width: 63rem; }
+  margin: -5rem 0 0 -12rem;
+  max-width: 70rem; }
 
 .Vanilla:after {
   content: '';
@@ -33,7 +36,10 @@ h3 {
 
 .active {
   background-color: #6d8688;
-  color: white; }
+  color: #c4c4c4; }
+
+.active:hover {
+  color: beige; }
 
 @keyframes bazinga {
   from {

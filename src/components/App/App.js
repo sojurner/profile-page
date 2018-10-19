@@ -12,7 +12,8 @@ class App extends Component {
     };
   }
 
-  handleClick = str => {
+  handleClick = (event, str) => {
+    event.preventDefault();
     str === 'show'
       ? this.setState({ hamburgerButton: false })
       : this.setState({ hamburgerButton: true });
@@ -24,15 +25,24 @@ class App extends Component {
       <div className="App">
         <header className="header">
           {hamburgerButton && (
-            <i class="fas fa-bars" onClick={() => this.handleClick('show')} />
+            <i
+              class="fas fa-bars"
+              onClick={event => this.handleClick(event, 'show')}
+            />
           )}
           {!hamburgerButton && (
-            <i class="fas fa-times" onClick={() => this.handleClick('hide')} />
+            <i
+              class="fas fa-times"
+              onClick={event => this.handleClick(event, 'leave')}
+            />
           )}
           {!hamburgerButton && <NavBar handleClick={this.handleClick} />}
         </header>
         <main>
-          <h1 className="me">Paul Kim</h1>
+          <img
+            src={require('../../Images/Paul-logo-1.png')}
+            className="name-logo"
+          />
           <ContentRoutes />
         </main>
       </div>

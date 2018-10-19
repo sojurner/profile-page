@@ -1,9 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
 import './NavBar.css';
 
-export const NavBar = ({ handleHover }) => {
+export const NavBar = ({ handleClick }) => {
   const navBars = ['Contact', 'About', 'Projects'];
   const navBar = navBars.map(linkType => {
     return (

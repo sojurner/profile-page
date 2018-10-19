@@ -30,12 +30,7 @@ class Projects extends Component {
   };
 
   displayHeaders = () => {
-    const projectList = [
-      'Vanilla JS',
-      'React',
-      'React/Redux',
-      'Static Compositions'
-    ];
+    const projectList = ['Vanilla JS', 'React', 'React/Redux', 'Static Comps'];
     const project = projectList.map((projectType, index) => {
       return (
         <section

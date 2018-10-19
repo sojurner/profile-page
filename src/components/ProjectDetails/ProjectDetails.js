@@ -17,10 +17,7 @@ class ProjectDetails extends Component {
   }
 
   handleHover = (event, title) => {
-    const { redirectLink } = this.props;
-    event.stopPropagation();
     event.preventDefault();
-    console.log(title);
     if (title) {
       this.setState({ showDescription: title });
     } else {
@@ -50,21 +47,23 @@ class ProjectDetails extends Component {
 
     return matchingType.map(comp => {
       return (
-        <div
-          onMouseEnter={event => this.handleHover(event, comp.title)}
-          onMouseLeave={event => this.handleHover(event)}
-          className={`project-card ${comp.title}`}
-          onClick={event => this.handleClick(event, comp.title)}
-        >
-          <img
-            className={`img img-${comp.title}`}
-            src={require(`../../Images/${comp.title}SS.png`)}
-            height="200"
-            width="300"
-          />
-          {this.state.showDescription === comp.title && (
-            <h3>{this.state.showDescription}</h3>
-          )}
+        <div>
+          <div
+            onMouseEnter={event => this.handleHover(event, comp.title)}
+            onMouseLeave={event => this.handleHover(event)}
+            className={`project-card ${comp.title}`}
+            onClick={event => this.handleClick(event, comp.title)}
+          >
+            <img
+              className={`img img-${comp.title}`}
+              src={require(`../../Images/${comp.title}SS.png`)}
+              height="200"
+              width="300"
+            />
+            {this.state.showDescription === comp.title && (
+              <h3 className="click-directions">Click to View</h3>
+            )}
+          </div>
           {this.state.showModal === comp.title && (
             <Modal open={this.state.open} onClose={this.onCloseModal} center>
               <ProjectModal
