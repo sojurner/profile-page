@@ -1,18 +1,31 @@
 .project-type {
-  width: 18rem;
-  background-color: #839eb8;
+  // width: 19rem;
+  background-color: #356d7e;
   animation: bazinga 1s ease-in;
   margin: 5rem 0;
   border-radius: 0.5rem;
   cursor: pointer;
-  padding: 0.5rem 0;
-  color: #4d6d6f;
+  padding: 0.5rem 0.2rem;
+  color: #97d4d8;
   height: 4rem;
 }
 
+table {
+  width: 17rem;
+  border-radius: 0.5rem;
+  border-collapse: separate;
+  border-spacing: 0.4em;
+}
+
 .project-type:hover {
-  // border: 2px solid rgb(100, 120, 157);
-  box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(100, 120, 157);
+  color: beige;
+
+  // box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(100, 120, 157);
+}
+
+td,
+tr {
+  border-radius: 0.5rem;
 }
 
 h3 {
@@ -40,20 +53,23 @@ h3 {
   border: 20px solid transparent;
 }
 
-.active {
-  background-color: #6d8688;
-  color: #c4c4c4;
+.project-type-active {
+  background-color: #6ca0ac;
+  color: #3b6777;
+  cursor: pointer;
 }
 
-.active:hover {
-  color: beige;
+.project-type-active:hover {
+  color: rgb(138, 201, 220);
+
+  // box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(100, 120, 157);
 }
 
-@keyframes bazinga {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
+// @keyframes bazinga {
+//   from {
+//     opacity: 0;
+//   }
+//   to {
+//     opacity: 1;
+//   }
+// }
