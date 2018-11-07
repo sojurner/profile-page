@@ -56,7 +56,7 @@ class ProjectDetails extends Component {
           >
             <img
               className={`img img-${comp.title}`}
-              src={require(`../../Images/${comp.title}SS.png`)}
+              src={require(`../../Images/${comp.title}.gif`)}
               height="200"
               width="300"
             />
