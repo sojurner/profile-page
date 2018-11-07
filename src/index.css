@@ -11,7 +11,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  /* font-family: 'Titillium Web', sans-serif; */
 }
 
 #root {
@@ -39,8 +39,13 @@ body {
   src: url(./Fonts/Montserrat-Regular.ttf);
 }
 
+@font-face {
+  font-family: antaro;
+  src: url(./Fonts/Antaro.ttf);
+}
+
 * {
   font-weight: 800;
-  font-family: monsterrat;
+  font-family: antaro;
   letter-spacing: 4px;
 }
