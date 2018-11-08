@@ -1,32 +1,72 @@
 .comp-title {
   text-align: center;
-  color: #6d6d6d; }
+  color: #6d6d6d;
+}
 
 .styles_closeIcon__1QwbI:hover {
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .modal-gif {
   width: 40.3rem;
   margin: 1rem 0 0 3.5rem;
   animation: fadeIn 2s linear;
   border-radius: 0.5rem;
-  height: 22.5rem; }
+  height: 22.5rem;
+}
 
 .styles_modal__gNwvD {
-  background-color: #d7edf1;
-  border-radius: 0.6rem; }
+  background-color: #124c62;
+  border-radius: 0.6rem;
+}
 
 .description {
   color: #636161;
   font-size: 1.5rem;
   line-height: 2rem;
   text-align: center;
-  margin: 3rem 0 2rem 0rem; }
+  margin: 3rem 0 2rem 0rem;
+}
 
-.fa-github,
+.fa-github {
+  font-size: 3rem;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 2px 0 2px 5px;
+  color: #7b84d8;
+  margin: 0 3rem;
+}
+
 .fa-desktop {
-  text-align: center; }
+  font-size: 2.7rem;
+  border-radius: 50%;
+  padding: 7px 0 5px 5px;
+  margin: 0 3rem;
+  color: #7b84d8;
+  cursor: pointer;
+}
+
+.fa-github:hover {
+  animation: morphingLogo 3s linear infinite;
+}
+
+.fa-desktop:hover {
+  animation: morphingLogo 2s linear infinite;
+}
 
 .link-icons {
   text-align: center;
-  margin: 0 0 1rem 0; }
+  margin: 0 0 1rem 0;
+}
+
+@keyframes morphingLogo {
+  0% {
+    filter: hue-rotate(-90deg);
+  }
+  50% {
+    filter: hue-rotate(90deg);
+  }
+  100% {
+    filter: hue-rotate(-90deg);
+  }
+}
