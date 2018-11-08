@@ -36,4 +36,38 @@ modal::backdrop {
 
 .description {
   font-family: 'Titillium Web', sans-serif;
-  margin: 3rem 0; }
+  margin: 3rem 0;
+}
+
+.slider-wrapper {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #397b7b;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  cursor: pointer;
+  border-top: none;
+  left: 1rem;
+  border-right: none;
+  z-index: 100;
+  align-self: center;
+  cursor: pointer;
+}
+
+.nav-right {
+  transform: translateY(-50%) rotate(-135deg);
+  margin-left: 2rem;
+}
+
+.nav-left {
+  margin-right: 2rem;
+}
+
+.nav-left-active,
+.nav-right-active {
+  border-color: #3dcbcb;
+}
+
+.right-left-active:hover {
+  border-color: #1785df;
+}
