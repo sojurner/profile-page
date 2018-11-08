@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectModal.css';
 
-export const ProjectModal = ({ onCloseModal, comp, redirectLink, open }) => {
+export const ProjectModal = ({ comp, redirectLink }) => {
   return (
     <div>
       <h3 className="comp-title">{comp.title}</h3>
