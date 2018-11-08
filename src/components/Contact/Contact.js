@@ -46,11 +46,6 @@ class Contact extends Component {
         {this.state.iconDescription && (
           <h4 className="icon-description">{this.state.iconDescription}</h4>
         )}
-
-        {/* <iframe
-          src="https://drive.google.com/file/d/1H1IJSZ1ilu9KdvDdHCFRBB25vLDnlxms/view"
-          style="width: 100%;height: 100%;border: none;"
-        /> */}
       </section>
     );
   }
