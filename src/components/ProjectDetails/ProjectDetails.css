@@ -10,10 +10,12 @@
 }
 
 .click-directions {
-  color: aliceblue; }
+  color: aliceblue;
+}
 
 .img:hover {
-  filter: brightness(50%); }
+  filter: brightness(50%);
+}
 
 .img-Minecraft,
 .img-Amumu,
