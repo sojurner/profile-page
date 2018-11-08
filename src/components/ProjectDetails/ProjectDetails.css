@@ -71,3 +71,21 @@ modal::backdrop {
 .right-left-active:hover {
   border-color: #1785df;
 }
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #8e8e8e;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3rem 0.4rem 0 0.4rem;
+  cursor: pointer;
+}
+
+.dot-active {
+  background-color: #545454;
+}
+
+.dot:hover {
+  background-color: #d2d2d2;
+}
