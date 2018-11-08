@@ -86,6 +86,11 @@ class About extends Component {
   render() {
     return (
       <section className="about-container">
+        <img
+          height="500"
+          width="750"
+          src={require(`../../Images/family.JPG`)}
+        />
         <ul>{this.displayTimeline()}</ul>
         {this.state.showTimeLine && (
           <div className="sub">{this.displaySubTimeline()}</div>
