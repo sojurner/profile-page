@@ -30,31 +30,37 @@ class Projects extends Component {
   };
 
   displayHeaders = () => {
-    const projectList = ['Vanilla JS', 'React', 'React/Redux', 'Static Comps'];
+    const { type, display } = this.state;
+    const projectList = [
+      'Vanilla JS',
+      'React',
+      'React/Redux',
+      'Static Compositions'
+    ];
     const project = projectList.map((projectType, index) => {
       return (
         <tr
-          className={
-            this.state.type !== projectType && this.state.display
-              ? `project-type ${projectType} `
-              : `project-type-active ${projectType}`
-          }
           key={`${projectType}-${index}`}
           onClick={event => this.handleMouseEvent(event, `show${projectType}`)}
         >
-          <td>
+          <td
+            className={
+              type !== projectType && display
+                ? `project-type ${projectType} `
+                : `project-type-active ${projectType}`
+            }
+          >
             <h3 className="project-type-header">{projectType}</h3>
-            {this.state.display &&
-              this.state.type === projectType && (
-                <div className={`project-container ${projectType}`}>
-                  <ProjectDetails
-                    handleMouseEvent={this.handleMouseEvent}
-                    redirectLink={this.redirectLink}
-                    projectType={this.state.type}
-                  />
-                </div>
-              )}
           </td>
+          {display && type === projectType && (
+            <div className={`project-container ${projectType}`}>
+              <ProjectDetails
+                handleMouseEvent={this.handleMouseEvent}
+                redirectLink={this.redirectLink}
+                projectType={type}
+              />
+            </div>
+          )}
         </tr>
       );
     });
