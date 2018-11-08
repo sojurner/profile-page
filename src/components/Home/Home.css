@@ -1,0 +1,145 @@
+@font-face {
+  font-family: burl;
+  src: url(../../Fonts/Burls.ttf);
+}
+
+p,
+strong {
+  font-size: 4rem;
+  color: #319a7a;
+  font-family: burl;
+}
+
+.author-quote {
+  color: #8bb0b8;
+  font-size: 5rem;
+}
+
+strong {
+  color: rgb(102, 148, 167);
+}
+
+linkedin-container,
+email-container,
+github-container {
+  position: relative;
+}
+
+.fa-github-alt,
+.fa-linkedin,
+.fa-envelope {
+  text-align: center;
+  font-size: 3rem;
+  color: #5f807a;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 2rem 2rem 1rem 2rem;
+  padding: 7px 7px 8px 12px;
+}
+
+.fa-envelope:hover {
+  animation: pulse 1.2s linear infinite;
+  background: #446a6a;
+  color: #55b09f;
+}
+
+.fa-github-alt:hover {
+  animation: pulse 1.2s linear infinite;
+  background: #446a6a;
+  color: #55b09f;
+}
+
+.fa-linkedin:hover {
+  background: #446a6a;
+  color: #55b09f;
+  animation: pulse 1.2s linear infinite;
+}
+
+.contact-info {
+  animation: flipInX 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.icon-description {
+  animation-duration: 0.75s;
+  animation-name: bounceIn;
+  font-family: burl;
+  font-size: 3rem;
+  color: #1ebff0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  letter-spacing: 5px;
+}
+
+.quote {
+  margin: 0;
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  40% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9);
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% {
+    -webkit-transform: scale3d(0.97, 0.97, 0.97);
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
