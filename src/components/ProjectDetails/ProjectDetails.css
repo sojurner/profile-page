@@ -17,51 +17,6 @@
   filter: brightness(50%);
 }
 
-.img-Minecraft,
-.img-Amumu,
-.img-Avatar {
-  filter: grayscale(50%); }
-
-.img-Minecraft:hover {
-  filter: grayscale(0%); }
-
-.img-Amumu:hover {
-  filter: grayscale(0%); }
-
-.img-Avatar:hover {
-  filter: grayscale(0%); }
-
-.fa-github {
-  font-size: 3rem;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 2px 0 2px 5px;
-  color: #5d5f6e;
-  margin: 0 3rem; }
-
-.fa-desktop {
-  font-size: 2.7rem;
-  border-radius: 50%;
-  padding: 7px 0 5px 5px;
-  margin: 0 3rem;
-  color: #5d5f6e; }
-
-.fa-github:hover {
-  color: #706868;
-  animation: pulse 1s linear infinite; }
-
-.fa-desktop:hover {
-  color: #706868;
-  animation: pulse 1s linear infinite; }
-
-.fa-window-close {
-  font-size: 2.5rem;
-  text-align: start;
-  margin: 0.3rem 0 0 0.6rem; }
-
-.fa-window-close:hover {
-  color: #806369; }
-
 .modal {
   display: flex;
   flex-direction: column;
@@ -72,10 +27,12 @@
   width: 76vw;
   background: #aec3d4;
   z-index: 1;
-  border-radius: 0.5rem; }
+  border-radius: 0.5rem;
+}
 
 modal::backdrop {
-  color: black; }
+  color: black;
+}
 
 .description {
   font-family: 'Titillium Web', sans-serif;
