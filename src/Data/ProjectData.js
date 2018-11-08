@@ -32,6 +32,14 @@ export const allProjects = [
     githubPages: 'https://event--mapper.herokuapp.com/'
   },
   {
+    title: 'Fantasy-futbol',
+    projectType: 'React/Redux',
+    description:
+      'Create your own league, add users, and create soccer team with Fantasy-futbol.  Users can search by country, player name, and/or club and view player stats.',
+    githubURL: 'https://github.com/sojurner/fantasy-futbol_client',
+    githubPages: 'https://fantasy-futbol-app.herokuapp.com/'
+  },
+  {
     title: 'Movie-tracker',
     projectType: 'React/Redux',
     description:
