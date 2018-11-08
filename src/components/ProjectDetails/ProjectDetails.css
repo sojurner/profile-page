@@ -1,20 +1,13 @@
 .project-card {
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  animation: fadeIn 1s linear;
-  margin: 2rem 0 0 7rem;
-  height: 15rem;
-  width: 20rem; }
-
-.project-card:hover {
-  /* background: linear-gradient(rgba(3, 89, 89, 0.808), rgba(5, 136, 138, 0.87)); } */ }
+  display: flex;
+  flex-direction: row;
+}
 
 .img {
-  border-radius: 0.5rem; }
-
-.project-photos:hover {
-  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)), center/cover;
-  background-size: 10rem; }
+  border-radius: 0.5rem;
+  visibility: visible;
+  transition: opacity 1s linear;
+}
 
 .click-directions {
   color: aliceblue; }
