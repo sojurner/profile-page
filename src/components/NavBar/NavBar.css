@@ -18,10 +18,17 @@
 }
 
 .nav-link:hover {
-  background-color: #b3d672; }
+  background-color: #83a04d;
+  color: #009bcb;
+}
 
-.active:hover {
-  background-color: gray; }
+.active {
+  font-size: 2rem;
+  border-radius: 0;
+  height: 3rem;
+  vertical-align: center;
+  padding: 0.2rem 1rem 0 1rem;
+}
 
 @keyframes bounceIn {
   from,
