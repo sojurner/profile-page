@@ -5,8 +5,7 @@ export const allProjects = [
     description:
       'Minecraft-inspired static webpage with emphasis on CSS grid and responsive design',
     githubURL: 'https://github.com/sojurner/Static-Composition-1',
-    githubPages: 'https://sojurner.github.io/Static-Composition-1/',
-    backgroundImg: '../../Images/MineCraft SS.png'
+    githubPages: 'https://sojurner.github.io/Static-Composition-1/'
   },
   {
     title: 'Avatar',
@@ -14,8 +13,7 @@ export const allProjects = [
       'Avatar-inspired static webpage with emphasis on CSS grid/flex, responsiveness, and card display',
     projectType: 'Static Compositions',
     githubURL: 'https://github.com/sojurner/Static-Composition-2',
-    githubPages: 'https://sojurner.github.io/Static-Composition-2/',
-    backgroundImg: '../../Images/AvatarSS.png'
+    githubPages: 'https://sojurner.github.io/Static-Composition-2/'
   },
   {
     title: 'Amumu',
@@ -23,8 +21,15 @@ export const allProjects = [
     description:
       'League of legends inspired static webpage with emphasis on responsiveness and element spacing',
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
-    githubPages: 'https://sojurner.github.io/Static-Comp-3/',
-    backgroundImg: '../../Images/AmumuSS.png'
+    githubPages: 'https://sojurner.github.io/Static-Comp-3/'
+  },
+  {
+    title: 'Event-mapper',
+    projectType: 'React/Redux',
+    description:
+      'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
+    githubURL: 'https://github.com/sojurner/Event-Mapper',
+    githubPages: 'https://event--mapper.herokuapp.com/'
   },
   {
     title: 'Movie-tracker',
@@ -32,8 +37,7 @@ export const allProjects = [
     description:
       'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
     githubURL: 'https://github.com/sojurner/Movie-Tracker',
-    githubPages: 'asdf',
-    backgroundImg: 'asdfs'
+    githubPages: 'asdf'
   },
   {
     title: 'Stravant',
@@ -41,8 +45,7 @@ export const allProjects = [
     description:
       'Checkout out your fitness Activity from Strava and track your Pomodoros',
     githubURL: 'https://github.com/sojurner/Stravant',
-    githubPages: 'asdf',
-    backgroundImg: 'asdfs'
+    githubPages: 'asdf'
   },
   {
     title: 'Swapi-box',
@@ -50,8 +53,7 @@ export const allProjects = [
     description:
       'Checkout the characters, vehicles, and planet information from the Star Wars series',
     githubURL: 'https://github.com/sojurner/swapi-box',
-    githubPages: 'asdf',
-    backgroundImg: 'asdfs'
+    githubPages: 'asdf'
   },
   {
     title: 'Headcount',
@@ -59,8 +61,7 @@ export const allProjects = [
     description:
       'Compare student grade averages between two districts in Colorado.',
     githubURL: 'https://github.com/sojurner/headcount2.0',
-    githubPages: 'asdf',
-    backgroundImg: 'asdfs'
+    githubPages: 'asdf'
   },
   {
     title: 'Tron',
@@ -69,7 +70,6 @@ export const allProjects = [
       'Recreation of Tron game with HTML Canvas and focus on Object-Oriented Programming',
     githubURL: 'https://github.com/sojurner/game-time-1',
     githubPages: 'https://michaelyons.github.io/game-time/',
-    backgroundImg: 'asdfs',
     gif: '../../tron.gif'
   },
   {
@@ -78,8 +78,7 @@ export const allProjects = [
     description:
       'Guess a Number!  Whether its too high or too low, Number-guesser will let you know.  Built using Vanilla JS, HTML5 ',
     githubURL: 'https://github.com/sojurner/Number-Guesser',
-    githubPages: 'https://sojurner.github.io/Number-Guesser/',
-    backgroundImg: 'asdfs'
+    githubPages: 'https://sojurner.github.io/Number-Guesser/'
   },
   {
     title: 'Linked-list',
@@ -87,8 +86,7 @@ export const allProjects = [
     description:
       'Bookmark your favorite sites, check them off after reading them, and delete',
     githubURL: 'https://github.com/sojurner/linked-list',
-    githubPages: 'https://sojurner.github.io/linked-list/',
-    backgroundImg: 'asdfs'
+    githubPages: 'https://sojurner.github.io/linked-list/'
   },
   {
     title: '2Do-box',
@@ -96,8 +94,7 @@ export const allProjects = [
     description:
       'Save your to-dos and Rate them by importance.  also Search for specific to-dos and delete when completed',
     githubURL: 'https://github.com/sojurner/2DoBox-Pivot',
-    githubPages: 'https://sojurner.github.io/2DoBox-Pivot/',
-    backgroundImg: 'asdfs'
+    githubPages: 'https://sojurner.github.io/2DoBox-Pivot/'
   }
 ];
 
