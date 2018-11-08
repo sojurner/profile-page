@@ -1,21 +1,21 @@
 .nav-bar {
   display: flex;
   flex-direction: horizontal;
-  height: 2rem; }
+  height: 2rem;
+}
 
 .nav-link {
   margin: 1.3rem;
   text-decoration: none;
   height: 2rem;
   border: 1px solid black;
-  background: #9db6a2;
-  padding: 0.5rem;
-  color: white;
+  background: #8ba7a7;
+  padding: 0.8rem 0.7rem 0rem 0.7rem;
+  color: #0082a8;
   border-radius: 0.5rem;
-  -webkit-box-shadow: 1px 1px 1px 1px grey;
-  box-shadow: 1px 1px 1px 1px grey;
   -webkit-animation: bounceIn 1s linear;
-  animation: bounceIn 1s linear; }
+  animation: bounceIn 1s linear;
+}
 
 .nav-link:hover {
   background-color: #b3d672; }
