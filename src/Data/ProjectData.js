@@ -1,7 +1,7 @@
 export const allProjects = [
   {
     title: 'Minecraft',
-    projectType: 'Static Compositions',
+    projectType: 'HTML/CSS',
     description:
       'Minecraft-inspired static webpage with emphasis on CSS grid and responsive design',
     githubURL: 'https://github.com/sojurner/Static-Composition-1',
@@ -11,13 +11,13 @@ export const allProjects = [
     title: 'Avatar',
     description:
       'Avatar-inspired static webpage with emphasis on CSS grid/flex, responsiveness, and card display',
-    projectType: 'Static Compositions',
+    projectType: 'HTML/CSS',
     githubURL: 'https://github.com/sojurner/Static-Composition-2',
     githubPages: 'https://sojurner.github.io/Static-Composition-2/'
   },
   {
     title: 'Amumu',
-    projectType: 'Static Compositions',
+    projectType: 'HTML/CSS',
     description:
       'League of legends inspired static webpage with emphasis on responsiveness and element spacing',
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
@@ -61,7 +61,7 @@ export const allProjects = [
     description:
       'Checkout the characters, vehicles, and planet information from the Star Wars series',
     githubURL: 'https://github.com/sojurner/swapi-box',
-    githubPages: 'asdf'
+    githubPages: 'https://sojurner.github.io/swapi-box/'
   },
   {
     title: 'Headcount',
@@ -69,7 +69,15 @@ export const allProjects = [
     description:
       'Compare student grade averages between two districts in Colorado.',
     githubURL: 'https://github.com/sojurner/headcount2.0',
-    githubPages: 'asdf'
+    githubPages: 'https://sojurner.github.io/headcount2.0/'
+  },
+  {
+    title: 'Polo-picker',
+    projectType: 'Vanilla JS',
+    description:
+      'Does that Shirt look good on you?  Well with Polo Picker you can find out!  Create a project and add a palette of polos to view later.',
+    githubURL: 'https://github.com/sojurner/Polo-picker',
+    githubPages: 'https://polo--picker.herokuapp.com/'
   },
   {
     title: 'Tron',
@@ -116,15 +124,7 @@ export const timeline = [
     endYear: 2013,
     img:
       'http://d21gd0ap5v1ndt.cloudfront.net/web01/puc/images_web/logo-puc.png',
-    extra: [
-      {
-        title: '167th MMB',
-        body: 'Combat Medic in Area IV',
-        location: 'Daegu, S. Korea',
-        startYear: 2013,
-        endYear: 2015
-      }
-    ]
+    description: {}
   },
   {
     title: 'Military',
@@ -134,7 +134,7 @@ export const timeline = [
     endYear: 2017,
     show: false,
     img: 'http://www.clker.com/cliparts/r/3/q/h/V/z/caduceus-pink-hi.png',
-    extra: [
+    description: [
       {
         title: '168th MMB',
         body: 'Combat Medic in Area IV',
@@ -158,9 +158,15 @@ export const timeline = [
     details: 'Front-end Developer',
     body:
       'Seven month long coding bootcamp focusing on Javascript, React, Redux, Node/Express',
-    startYear: 2018,
-    endYear: 'current',
+    startYear: 2017,
+    endYear: '',
     img:
-      'https://static1.squarespace.com/static/59a6f9d3579fb360d747292d/5ac68cbe758d46c0754f6433/5ac68d44aa4a99ed1aa5a4a6/1523039439760/TuringSchool_LogoHorizontal_White.png?format=500w'
+      'https://static1.squarespace.com/static/59a6f9d3579fb360d747292d/5ac68cbe758d46c0754f6433/5ac68d44aa4a99ed1aa5a4a6/1523039439760/TuringSchool_LogoHorizontal_White.png?format=500w',
+    description: {
+      skills: {
+        React:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png'
+      }
+    }
   }
 ];
