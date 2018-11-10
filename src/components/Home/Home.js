@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Carousel from 'nuka-carousel';
 
 import './Home.css';
 
@@ -59,25 +60,23 @@ class Home extends Component {
           )}
         </section>
         <section className="quote">
-          <p>
-            "The Greatest Obstacle to Living is <strong>Expectancy</strong>,
-            which hangs upon tomorrow."
-          </p>
-          <p>
-            You are arranging what lies in <strong>Fortunes</strong> control,
-            and abandoning what lies in <strong>Yours</strong>.
-          </p>
-          <p>
-            What are you looking at <strong>?</strong>
-          </p>
-          <p>
-            To what goals are you straining <strong>?</strong>
-          </p>
-          <p>
-            The whole future lies in uncertainty .{' '}
-            <strong> . . Live Immediately</strong>
-          </p>
-          <p className="author-quote">- Seneca</p>
+          <Carousel
+            autoplay={true}
+            wrapAround={true}
+            speed={2000}
+            pauseOnHover={false}
+          >
+            <p>
+              Great Minds Discuss <strong>Ideas</strong>
+            </p>
+            <p>
+              Average Minds Discuss <strong>Events</strong>
+            </p>
+            <p>
+              Small Minds Discuss <strong>People</strong>
+            </p>
+          </Carousel>
+          <p className="author-quote">- Eleanor Roosevelt</p>
         </section>
       </div>
     );
