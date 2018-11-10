@@ -1,17 +1,21 @@
 .about-container {
-  margin: 0 7rem;
-  text-align: center; }
+  margin: 0 10rem;
+  text-align: center;
+  font-size: 1rem;
+}
 
 .about-container ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  position: relative; }
+  position: relative;
+}
 
 .about-container .sub {
   position: absolute;
   left: 52rem;
-  bottom: 9rem; }
+  bottom: 9rem;
+}
 
 .about-container .sub:before {
   content: '';
@@ -20,7 +24,8 @@
   left: 0;
   width: 0;
   height: 100%;
-  border: none; }
+  border: none;
+}
 
 .about-container ul:before {
   content: '';
@@ -29,7 +34,8 @@
   left: 0;
   width: 0;
   height: 100%;
-  border: 2px dashed #aaa; }
+  border: 2px dashed #aaa;
+}
 
 .about-container ul li {
   margin: 5rem 60px;
@@ -40,7 +46,8 @@
   width: 15rem;
   height: 7rem;
   padding: 0.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .about-container ul li > span {
   content: '';
@@ -49,7 +56,8 @@
   left: -60px;
   width: 0;
   height: 100%;
-  border: 2px solid #aaa; }
+  border: 2px solid #aaa;
+}
 
 .about-container ul li > span:before,
 .about-container ul li > span:after {
@@ -60,59 +68,85 @@
   position: absolute;
   border-radius: 50%;
   left: -9.4px;
-  background: white; }
+  background: white;
+}
 
 .about-container ul li > span:before {
   top: -20px;
-  background: #a3b1b9; }
+  background: #a3b1b9;
+}
 
 .about-container ul li > span:after {
   top: 100%;
-  background: #5a8197; }
+  background: #5a8197;
+}
 
 .about-container ul li .time span {
   left: -125px;
   width: 30px;
   text-align: right;
   position: absolute;
-  opacity: 1; }
+  opacity: 1;
+}
 
 .about-container ul li .time span:first-child {
   color: white;
-  top: -16px; }
+  top: -16px;
+}
 
 .about-container ul li .time span:last-child {
-  top: 93px; }
+  color: white;
+  top: 130px;
+}
 
 .korea,
 .alabama {
   color: azure;
-  width: 21rem; }
+  width: 21rem;
+}
 
 .past-details {
   background: #5a8197;
-  border: 2px solid red; }
+  border: 2px solid red;
+}
+.name,
+.title,
+.location {
+  font-size: 1.7rem;
+  margin: 0.7rem;
+  color: #303b41;
+}
 
 .about-container ul li ul li .sub-time span:first-child {
-  top: -16px; }
+  top: -16px;
+}
 
 .about-container ul li ul li .sub-time span:last-child {
-  top: 140px; }
+  top: 140px;
+}
 
 .College:hover {
-  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)), center/cover; }
+  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)),
+    center/cover;
+}
 
 .Military:hover {
-  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)); }
+  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87));
+}
 
 .Software:hover {
-  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)); }
+  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87));
+}
 
 .College-active {
-  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)), center/cover; }
+  background: linear-gradient(rgba(52, 53, 53, 0.808), rgba(0, 0, 0, 0.87)),
+    center/cover;
+}
 
 .about-container ul .Military-active {
-  background: linear-gradient(rgba(251, 255, 255, 0.808), rgba(0, 0, 0, 0.87)), center/cover; }
+  background: linear-gradient(rgba(251, 255, 255, 0.808), rgba(0, 0, 0, 0.87)),
+    center/cover;
+}
 
 .image-College {
   position: absolute;
@@ -121,7 +155,8 @@
   width: 13rem;
   height: 6rem;
   animation: fadeIn 0.5s linear;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .image-Military {
   position: absolute;
@@ -130,7 +165,8 @@
   width: 9rem;
   height: 6rem;
   animation: fadeIn 0.5s linear;
-  z-index: 1; }
+  z-index: 1;
+}
 
 .image-Software {
   position: absolute;
@@ -139,10 +175,26 @@
   width: 13rem;
   height: 4rem;
   animation: fadeIn 0.5s linear;
-  z-index: 1; }
+  z-index: 1;
+}
+
+.family {
+  position: absolute;
+  height: 196vh;
+  width: 185vh;
+  position: absolute;
+  top: -11rem;
+  left: 0;
+  filter: grayscale(50%);
+  opacity: 0.5;
+  z-index: -1;
+}
 
 @keyframes fadeIn {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}

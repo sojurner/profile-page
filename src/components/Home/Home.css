@@ -5,18 +5,32 @@
 
 p,
 strong {
-  font-size: 4rem;
+  font-size: 5rem;
   color: #319a7a;
   font-family: burl;
+  margin: 4rem auto 0 auto;
+  width: 80%;
+}
+
+.home-screen .quote .slider div ul li button {
+  display: none;
+}
+
+.home-screen .quote .slider div button {
+  display: none;
 }
 
 .author-quote {
-  color: #8bb0b8;
+  color: rgb(102, 148, 167);
   font-size: 5rem;
 }
 
+.home-screen .quote .slider div ul li p {
+  cursor: inherit;
+}
+
 strong {
-  color: rgb(102, 148, 167);
+  color: #0082a8;
 }
 
 linkedin-container,
@@ -64,7 +78,7 @@ github-container {
   animation-name: bounceIn;
   font-family: burl;
   font-size: 3rem;
-  color: #1ebff0;
+  color: #319a7a;
   position: absolute;
   left: 0;
   right: 0;
