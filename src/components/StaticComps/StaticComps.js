@@ -7,7 +7,7 @@ const displayHeaders = () => {
     'Vanilla JS',
     'React',
     'React/Redux',
-    'Static Compositions'
+    'HTML/CSS'
   ];
   const projects = projectList.map((projectType, index) => {
     return (
