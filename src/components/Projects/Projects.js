@@ -9,7 +9,8 @@ class Projects extends Component {
     super();
     this.state = {
       display: false,
-      type: ''
+      type: '',
+      logo: ''
     };
   }
 
@@ -30,26 +31,41 @@ class Projects extends Component {
   };
 
   displayHeaders = () => {
-    const { type, display } = this.state;
-    const projectList = [
-      'Vanilla JS',
-      'React',
-      'React/Redux',
-      'Static Compositions'
-    ];
-    const project = projectList.map((projectType, index) => {
+    const { type, display, logo } = this.state;
+    const projectList = {
+      'Vanilla JS':
+        'http://pluspng.com/img-png/logo-javascript-png-html-code-allows-to-embed-javascript-logo-in-your-website-587.png',
+      React:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png',
+      'React/Redux':
+        'https://cdn-images-1.medium.com/max/1200/1*VeM-5lsAtrrJ4jXH96h5kg.png',
+      'HTML/CSS':
+        'https://cdn-images-1.medium.com/max/1200/1*lJ32Bl-lHWmNMUSiSq17gQ.png'
+    };
+
+    const project = Object.keys(projectList).map((projectType, index) => {
       return (
         <tr
           key={`${projectType}-${index}`}
+          onMouseEnter={e => this.showLogo(e, projectType)}
+          onMouseLeave={this.hideLogo}
           onClick={event => this.handleMouseEvent(event, `show${projectType}`)}
         >
           <td
             className={
               type !== projectType && display
-                ? `project-type ${projectType} `
+                ? `project-type ${projectType}`
                 : `project-type-active ${projectType}`
             }
           >
+            <img
+              className={
+                projectType === logo
+                  ? 'project-logo-active'
+                  : 'project-logo-hide'
+              }
+              src={projectList[projectType]}
+            />
             <h3 className="project-type-header">{projectType}</h3>
           </td>
           {display && type === projectType && (
@@ -64,11 +80,21 @@ class Projects extends Component {
         </tr>
       );
     });
+
     return (
       <table>
         <tbody>{project}</tbody>
       </table>
     );
+  };
+
+  showLogo = (e, logo) => {
+    e.preventDefault();
+    this.setState({ logo });
+  };
+
+  hideLogo = () => {
+    this.setState({ logo: '' });
   };
 
   render() {
