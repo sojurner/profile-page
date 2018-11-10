@@ -27,7 +27,6 @@ class ProjectDetails extends Component {
     );
 
     await this.setState({ selectedProjects: selectedProjects });
-    console.log(this.state.selectedProjects);
   }
 
   handleHover = (event, title) => {
@@ -41,6 +40,7 @@ class ProjectDetails extends Component {
 
   handleClick = (event, title) => {
     event.stopPropagation();
+    event.preventDefault();
     this.setState({ showModal: title });
     console.log(title);
     this.onOpenModal();
@@ -98,10 +98,12 @@ class ProjectDetails extends Component {
 
   render() {
     const { selectedProjects, currentIndex, nextIndex, prevIndex } = this.state;
+
     if (selectedProjects) {
       return (
         <div>
           <div className={`project-card`}>
+            {' '}
             <div
               className={
                 !currentIndex
@@ -128,7 +130,6 @@ class ProjectDetails extends Component {
             />
           </div>
           {this.createBtns()}
-
           {this.state.showDescription ===
             selectedProjects[currentIndex].title && (
             <h3 className="click-directions">Click to View</h3>
@@ -145,7 +146,7 @@ class ProjectDetails extends Component {
         </div>
       );
     } else {
-      return <div>ds</div>;
+      return <div />;
     }
   }
 }
