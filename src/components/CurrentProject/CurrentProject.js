@@ -1,5 +1,4 @@
 import React from 'react';
-import { Motion, spring } from 'react-motion';
 
 import './CurrentProject.css';
 
@@ -24,30 +23,15 @@ export const CurrentProject = ({
         />
       )}
       <div className="current-container">
-        <Motion defaultStyle={{ x: 0 }} style={{ x: spring(-20) }}>
-          {container => (
-            <Motion style={container}>
-              {style => (
-                <img
-                  style={{
-                    transform: `translateX(${style.x}px)`,
-                    // transform: `skew(-10deg, -20deg)`,
-                    opacity: style.opacity
-                  }}
-                  className={`img img-current`}
-                  src={require(`../../Images/${selectedProject.title}.gif`)}
-                  onClick={event => handleClick(event, selectedProject.title)}
-                  onMouseEnter={event =>
-                    handleHover(event, selectedProject.title)
-                  }
-                  onMouseLeave={event => handleHover(event)}
-                  height="200"
-                  width="300"
-                />
-              )}
-            </Motion>
-          )}
-        </Motion>
+        <img
+          className={`img img-current`}
+          src={require(`../../Images/${selectedProject.title}.gif`)}
+          onClick={event => handleClick(event, selectedProject.title)}
+          onMouseEnter={event => handleHover(event, selectedProject.title)}
+          onMouseLeave={event => handleHover(event)}
+          height="200"
+          width="300"
+        />
       </div>
 
       {nextProject && (
